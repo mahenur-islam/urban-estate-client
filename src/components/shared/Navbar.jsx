@@ -58,7 +58,7 @@ const Navbar = () => {
             </div>
             <Link to="/" className="flex items-center">
               <img src="https://i.ibb.co/yqb15nv/Gold-and-Black-Minimalist-Real-Estate-Logo.png" alt="logo" width={100} />
-              <span className="font-bold text-sm md:text-2xl md:block hidden text-white">Urban State</span>
+              <span className="font-bold text-sm md:text-2xl md:block hidden"><span className='text-purple-900 italic'>Urban-</span><span className='italic'>Estate</span></span>
             </Link>
           </div>
 
