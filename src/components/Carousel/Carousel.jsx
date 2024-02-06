@@ -1,41 +1,53 @@
 // Import Swiper React components
-import { Swiper, SwiperSlide } from 'swiper/react';
+import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
-import 'swiper/css';
-import 'swiper/css/pagination';
-import 'swiper/css/navigation';
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
 // import required modules
-import { Autoplay, Pagination, Navigation } from 'swiper/modules';
+import { Autoplay } from "swiper/modules";
+import SwiperNavButton from "./SwiperNavButton";
+
 const Carousel = () => {
-    return (
-        <div>
-            <Swiper
+  const sliderImage = [
+    {
+      name: "House-1",
+      url: "https://i.ibb.co/373S0JB/house-1.jpg",
+    },
+    {
+      name: "House-2",
+      url: " https://i.ibb.co/Kb8ffXg/house-2.jpg",
+    },
+    {
+      name: "House-3",
+      url: "https://i.ibb.co/4SY0NbY/house-3.jpg",
+    },
+  ];
+
+  return (
+    <div>
+      <Swiper
         spaceBetween={30}
         centeredSlides={true}
         autoplay={{
           delay: 2500,
           disableOnInteraction: false,
         }}
-        pagination={{
-          clickable: true,
-        }}
         navigation={true}
-        modules={[Autoplay, Pagination, Navigation]}
+        modules={[Autoplay]}
         className="mySwiper"
       >
-        <SwiperSlide><img src='https://i.ibb.co/r7kxQP3/Gold-and-Black-Minimalist-Real-Estate-Logo-1.png'/></SwiperSlide>
-        <SwiperSlide><img src='https://i.ibb.co/M10NbHy/pexels-vikram-sundaramoorthy-1448385.jpg'/></SwiperSlide>
-        <SwiperSlide>Slide 3</SwiperSlide>
-        <SwiperSlide>Slide 4</SwiperSlide>
-        <SwiperSlide>Slide 5</SwiperSlide>
-        <SwiperSlide>Slide 6</SwiperSlide>
-        <SwiperSlide>Slide 7</SwiperSlide>
-        <SwiperSlide>Slide 8</SwiperSlide>
-        <SwiperSlide>Slide 9</SwiperSlide>
+        {sliderImage.map((slider) => (
+          <SwiperSlide key={slider.name}>
+            <img src={slider.url} alt={slider.name}  />
+          </SwiperSlide>
+       
+        ))}
+        <SwiperNavButton />
       </Swiper>
-        </div>
-    );
+    </div>
+  );
 };
 
 export default Carousel;
