@@ -4,8 +4,10 @@ import { IoHomeOutline } from 'react-icons/io5';
 import { MdOutlineHomeWork } from 'react-icons/md';
 import { LuPhoneIncoming } from 'react-icons/lu';
 import { IoBookOutline } from "react-icons/io5";
+import { useState, useEffect } from 'react';
 
 const Navbar = () => {
+  const [scrolled, setScrolled] = useState(false);
   const navLinks = [
     { name: 'Home', path: '/', icon: <IoHomeOutline /> },
     { name: 'Property', path: '/property', icon: <MdOutlineHomeWork /> },
@@ -13,9 +15,22 @@ const Navbar = () => {
     { name: 'Blog', path: '/blog', icon: <IoBookOutline /> },
   ];
 
+    useEffect(() => {
+    const handleScroll = () => {
+      const isScrolled = window.scrollY > 0;
+      setScrolled(isScrolled);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
-    <div className= 'fixed w-full z-10 bg-transparent'>
-      <div className="py-1">
+    <div className={`fixed w-full z-10 ${scrolled ? 'bg-white transition-all ease-out duration-500' : 'bg-transparent'}`}>
+      <div className="py-0">
         <div className="flex justify-between px-5">
           <div className="navbar-start flex items-center">
             <div className="dropdown ml-4">
@@ -35,15 +50,15 @@ const Navbar = () => {
                 className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
               >
                 {navLinks.map((nav) => (
-                  <li key={nav.name}>
-                    <NavLink to={nav.path}>{nav.icon}{nav.name}</NavLink>
+                  <li key={nav.name} >
+                    <NavLink to={nav.path} className="font-semibold">{nav.icon}{nav.name}</NavLink>
                   </li>
                 ))}
               </ul>
             </div>
             <Link to="/" className="flex items-center">
               <img src="https://i.ibb.co/yqb15nv/Gold-and-Black-Minimalist-Real-Estate-Logo.png" alt="logo" width={100} />
-              <span className="font-bold text-sm md:text-2xl md:block hidden">Urban State</span>
+              <span className="font-bold text-sm md:text-2xl md:block hidden text-white">Urban State</span>
             </Link>
           </div>
 
@@ -51,7 +66,7 @@ const Navbar = () => {
             <ul className="menu menu-horizontal px-1 gap-3">
               {navLinks.map((nav) => (
                 <li key={nav.name}>
-                  <NavLink to={nav.path}>{nav.icon}{nav.name}</NavLink>
+                  <NavLink to={nav.path} className="font-semibold">{nav.icon}{nav.name}</NavLink>
                 </li>
               ))}
             </ul>
