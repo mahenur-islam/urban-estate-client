@@ -2,20 +2,24 @@ import { AiOutlineMenu } from 'react-icons/ai'
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import useAuth from '../../hooks/useAuth'
+// import { MdArrowOutward } from "react-icons/md";
+import avatar from '../../assets/images/avatar.png'
+import Button from './Button/Button'
 
 
 const MenuDropdown = () => {
   const [isOpen, setIsOpen] = useState(false)
-  const { user } = useAuth()
+  const { user, logOut } = useAuth()
 
   return (
-    <div className='relative'>
+    <div className='relative w-60'>
       <div className='flex flex-row items-center gap-3'>
         {/* Become A Host btn */}
         <div className='hidden md:block'>
-          <button className='disabled:cursor-not-allowed cursor-pointer hover:bg-neutral-100 py-3 px-4 text-sm font-semibold rounded-full  transition'>
-            Host your home
+          <button className='disabled:cursor-not-allowed bg-purple-900 text-white cursor-pointer hover:bg-gray-800  py-3 px-4 text-sm font-semibold rounded-full transition  hover:text-white'>
+            Become a host
           </button>
+          
         </div>
         {/* Dropdown btn */}
         <div
@@ -28,7 +32,7 @@ const MenuDropdown = () => {
             <img
               className='rounded-full'
               referrerPolicy='no-referrer'
-              src={user && user.photoURL ? user.photoURL : ''}
+              src={user && user.photoURL ? user.photoURL : avatar}
               alt='profile'
               height='30'
               width='30'
@@ -50,13 +54,13 @@ const MenuDropdown = () => {
               to='/login'
               className='px-4 py-3 hover:bg-neutral-100 transition font-semibold'
             >
-              Login
+              Dashboard
             </Link>
             <Link
               to='/signup'
               className='px-4 py-3 hover:bg-neutral-100 transition font-semibold'
             >
-              Sign Up
+              <Button label={'Logout'} onClick={logOut}/>
             </Link>
           </div>
         </div>

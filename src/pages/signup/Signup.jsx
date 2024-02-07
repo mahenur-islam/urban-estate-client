@@ -1,15 +1,18 @@
 /* eslint-disable no-unused-vars */
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { FcGoogle } from "react-icons/fc";
 import { imageUpload } from "../../utils/utils";
 import useAuth from "../../hooks/useAuth";
-import { saveUser } from "../../api/Auth";
+import { getToken, saveUser } from "../../api/Auth";
 import { useState } from "react";
-
+import toast from "react-hot-toast";
+import { TbFidgetSpinner } from "react-icons/tb";
 
 const Signup = () => {
-  const { createUser, signInWithGoogle, updateUserProfile } = useAuth();
+  const { createUser, signInWithGoogle, updateUserProfile, loading } =
+    useAuth();
   const [error, setError] = useState(null);
+  const navigate = useNavigate();
   //form submit handler
   const handleSubmit = async (event) => {
     event.preventDefault();
@@ -25,7 +28,7 @@ const Signup = () => {
       const imageData = await imageUpload(image);
       console.log(imageData);
       //2. creating user
-      const result = await createUser(email,password);
+      const result = await createUser(email, password);
 
       //3. save username and profile photo
       await updateUserProfile(name, imageData?.data?.display_url);
@@ -33,22 +36,47 @@ const Signup = () => {
       //4. save userdata in database
       const dbResponse = await saveUser(result?.user);
       console.log(dbResponse);
+
       //result.user.email
       // console.log(result);
 
       //5. get token
+      await getToken(result?.user?.email);
+      //give a toast message
+      toast.success("user account created succesfully!");
+      navigate("/");
     } catch (error) {
-      console.error('Error during signup:', error);
-      setError(error.message || 'An error occurred during signup.');
+      toast.error("Error during signup:", error);
+      setError(error.message || "An error occurred during signup.");
+    }
+  };
+
+  //handle google sign up
+  const handleGoogleSignUp = async () => {
+    try {
+      //1. creating user using google
+      const result = await signInWithGoogle();
+
+      //2. save userdata in database
+      const dbResponse = await saveUser(result?.user);
+      console.log(dbResponse);
+      //3. get token
+      await getToken(result?.user?.email);
+      //give a toast message
+      toast.success("user account created succesfully!");
+      navigate("/");
+    } catch (error) {
+      toast.error("Error during signup:", error);
+      setError(error.message || "An error occurred during signup.");
     }
   };
 
   return (
-    <div className="flex justify-center items-center min-h-screen">
+    <div className="flex justify-center items-center min-h-screen my-10">
       <div className="flex flex-col max-w-md p-6 rounded-md sm:p-10 bg-gray-100 text-gray-900">
         <div className="mb-8 text-center">
           <h1 className="my-3 text-4xl font-bold">Sign Up</h1>
-          <p className="text-sm text-gray-400">Welcome to StayVista</p>
+          <p className="text-sm text-gray-400">Welcome to Urban Estate</p>
         </div>
         <form
           noValidate=""
@@ -117,9 +145,13 @@ const Signup = () => {
           <div>
             <button
               type="submit"
-              className="bg-rose-500 w-full rounded-md py-3 text-white"
+              className="bg-purple-900 hover:bg-purple-800 w-full rounded-md py-3 text-white"
             >
-              Continue
+              {loading ? (
+                <TbFidgetSpinner className="animate-bounce m-auto" />
+              ) : (
+                "Continue"
+              )}
             </button>
           </div>
         </form>
@@ -130,7 +162,7 @@ const Signup = () => {
           </p>
           <div className="flex-1 h-px sm:w-16 dark:bg-gray-700"></div>
         </div>
-        <div className="flex justify-center items-center space-x-2 border m-3 p-2 border-gray-300 border-rounded cursor-pointer">
+        <div className="flex justify-center items-center space-x-2 border m-3 p-2 border-gray-300 border-rounded cursor-pointer" onClick={handleGoogleSignUp}>
           <FcGoogle size={32} />
 
           <p>Continue with Google</p>
@@ -139,7 +171,7 @@ const Signup = () => {
           Already have an account?{" "}
           <Link
             to="/login"
-            className="hover:underline hover:text-rose-500 text-gray-600"
+            className="hover:underline hover:text-purple-900 text-gray-600 font-semibold"
           >
             Login
           </Link>
