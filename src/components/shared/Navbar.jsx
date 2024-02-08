@@ -92,7 +92,7 @@ const Navbar = () => {
           </div>
 
           <div className="navbar-center hidden lg:flex lg:justify-center lg:items-center">
-            <ul className="menu menu-horizontal px-1 gap-3">
+            <ul className="menu menu-horizontal px-1 gap-2">
               {navLinks.map((nav) => (
                 <li key={nav.name}>
                   <NavLink to={nav.path} className="font-semibold">

@@ -60,7 +60,7 @@ const MenuDropdown = () => {
               to='/signup'
               className='px-4 py-3 hover:bg-neutral-100 transition font-semibold'
             >
-              <Button label={'Logout'} onClick={logOut}/>
+              <Button label={'Logout'} onClick={logOut} />
             </Link>
           </div>
         </div>
