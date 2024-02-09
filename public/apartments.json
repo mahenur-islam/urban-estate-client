@@ -1,0 +1,134 @@
+[
+  {
+    "_id": 1,
+    "category": "Houses",
+    "houseName": "Serene Haven",
+    "address": {
+        "country": "United States",
+        "state": "California",
+        "city": "San Francisco",
+        "roadNumber": "Oak Street",
+        "houseNumber": 1234
+    },
+    "roomSize": 2500,
+    "bedrooms": [
+        {"name": "Master Bedroom", "size": 300},
+        {"name": "Bedroom 2", "size": 250},
+        {"name": "Bedroom 3", "size": 200}
+    ],
+    "livingSpaces": {
+        "livingRoom": 400,
+        "diningRoom": 150
+    },
+    "bathrooms": {
+        "masterBathroom": {"size": 120},
+        "guestBathroom": {"size": 80},
+        "count": 3
+    },
+    "garages": 2,
+    "propertyDetails": "Beautiful two-story home with modern architecture and stunning interior design.",
+    "shortDetails": "Spacious 3-bedroom, 3-bathroom home with a contemporary feel, ideal for families.",
+    "ownerInformation": {
+        "phoneNumber": "+1 (555) 123-4567",
+        "emailAddress": "owner@example.com",
+        "contactInfo": "Available between 9 AM - 6 PM"
+    },
+    "propertyPrice": 1200000,
+    "propertyID": "SF123456",
+    "propertySizeOverall": 3500,
+    "propertyType": "Single Family Home",
+    "builtYear": 2020,
+    "availability": "Ready to move in",
+    "featuresAndAmenities": [
+        "Spacious Kitchen",
+        "Hardwood Floors",
+        "Central Heating and Cooling",
+        "Walk-in Closets",
+        "Private Backyard"
+    ],
+    "floorPlan": {
+        "firstFloor": ["Living Room", "Dining Room", "Kitchen", "Guest Bedroom", "Bathroom"],
+        "secondFloor": ["Master Bedroom with Ensuite", "Bedroom 2", "Common Bathroom"]
+    },
+    "images": {
+        "bedroom1": "https://i.ibb.co/KDCWjS0/43c05f1189c02595b15223e22c9cc530.jpg",
+        "livingRoom": "[Link to Living Room Image]",
+        "masterBathroom": "[Link to Master Bathroom Image]",
+        "garage": "[Link to Garage Image]"
+    },
+    "nearbyFacilities": {
+        "hospitals": "St. Mary's Medical Center",
+        "schools": "Oak Elementary School",
+        "gym": "Fitness Junction",
+        "pools": "City Aquatic Center",
+        "busStop": "Oak Street Bus Station",
+        "park": "Green Meadows Park"
+    }
+},
+{
+  "_id": 2,
+  "category": "Office",
+  "houseName": "Modern Retreat",
+  "address": {
+      "country": "United States",
+      "state": "New York",
+      "city": "New York City",
+      "roadNumber": "Broadway",
+      "houseNumber": 567
+  },
+  "roomSize": 2200,
+  "bedrooms": [
+      {"name": "Master Suite", "size": 350},
+      {"name": "Guest Bedroom", "size": 200},
+      {"name": "Office", "size": 150}
+  ],
+  "livingSpaces": {
+      "livingRoom": 300,
+      "diningRoom": 120
+  },
+  "bathrooms": {
+      "masterBathroom": {"size": 150},
+      "guestBathroom": {"size": 80},
+      "count": 2
+  },
+  "garages": 1,
+  "propertyDetails": "A sleek and modern home with panoramic city views.",
+  "shortDetails": "2-bedroom, 2-bathroom residence with a focus on contemporary design.",
+  "ownerInformation": {
+      "phoneNumber": "+1 (555) 987-6543",
+      "emailAddress": "owner2@example.com",
+      "contactInfo": "Available from 10 AM - 7 PM"
+  },
+  "propertyPrice": 950000,
+  "propertyID": "NYC567890",
+  "propertySizeOverall": 2800,
+  "propertyType": "Condo",
+  "builtYear": 2018,
+  "availability": "Available in 30 days",
+  "featuresAndAmenities": [
+      "City View",
+      "Smart Home Technology",
+      "Walk-in Closets",
+      "Balcony"
+  ],
+  "floorPlan": {
+      "firstFloor": ["Living Room", "Dining Room", "Kitchen", "Guest Bedroom", "Bathroom"],
+      "secondFloor": ["Master Suite", "Office", "Master Bathroom"]
+  },
+  "images": {
+      "masterBedroom": "[Link to Master Bedroom Image]",
+      "livingRoom": "[Link to Living Room Image]",
+      "bathroom": "[Link to Bathroom Image]",
+      "garage": "[Link to Garage Image]"
+  },
+  "nearbyFacilities": {
+      "hospitals": "NYC Medical Center",
+      "schools": "Broadway Elementary School",
+      "gym": "FitHub",
+      "pools": "City View Pool Club",
+      "busStop": "Broadway Bus Station",
+      "park": "Central Park"
+  }
+}
+
+]

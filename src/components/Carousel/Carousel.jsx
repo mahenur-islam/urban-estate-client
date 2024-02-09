@@ -34,7 +34,7 @@ const Carousel = () => {
       style={{
         height: "90vh",
         marginTop: "0",
-        position: "absolute",
+        // position: "absolute",
         top: 0,
         left: 0,
         right: 0,
@@ -79,7 +79,7 @@ const Carousel = () => {
                 </div>
               </div>
               <div>
-                <CarouselCard />
+                <CarouselCard slide={slide}/>
               </div>
             </div>
           </SwiperSlide>

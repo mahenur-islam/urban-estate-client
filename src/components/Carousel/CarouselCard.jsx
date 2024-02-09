@@ -1,10 +1,13 @@
-const CarouselCard = () => {
+/* eslint-disable react/prop-types */
+const CarouselCard = ({slide}) => {
+  const {name, url, text, textSubtitle} = slide;
+  console.log(name, url, text, textSubtitle)
   return (
     <div>
       <div className="card w-64 lg:w-96 bg-base-100 shadow-xl">
         <figure className="h-[20vh]">
           <img
-            src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
+            src={url}
             alt="Shoes"
           />
         </figure>

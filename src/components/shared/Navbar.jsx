@@ -3,6 +3,7 @@ import { Link, NavLink } from "react-router-dom";
 import { IoHomeOutline } from "react-icons/io5";
 import { MdOutlineHomeWork } from "react-icons/md";
 import { LuPhoneIncoming } from "react-icons/lu";
+import { BsBuildings } from "react-icons/bs";
 import { IoBookOutline } from "react-icons/io5";
 import { useState, useEffect } from "react";
 import useAuth from "../../hooks/useAuth";
@@ -13,10 +14,10 @@ const Navbar = () => {
   const { user } = useAuth();
   // console.log(user);
   const navLinks = [
-    { name: "Home", path: "/", icon: <IoHomeOutline /> },
-    { name: "Property", path: "/property", icon: <MdOutlineHomeWork /> },
-    { name: "Services", path: "/services" },
-    { name: "Blog", path: "/blog", icon: <IoBookOutline /> },
+    { name: "Home", path: "/", icon: <IoHomeOutline size={20}/> },
+    { name: "Property", path: "/property", icon: <MdOutlineHomeWork size={20} /> },
+    { name: "Apartments", path: "/apartments", icon: <BsBuildings size={20} /> },
+    { name: "Blog", path: "/blog", icon: <IoBookOutline  size={20} /> },
   ];
 
   useEffect(() => {
@@ -36,7 +37,7 @@ const Navbar = () => {
     <div
       className={`fixed w-full z-10 ${
         scrolled
-          ? "bg-white transition-all ease-out duration-500"
+          ? "bg-white"
           : "bg-transparent"
       }`}
     >
