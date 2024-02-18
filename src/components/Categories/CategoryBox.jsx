@@ -18,7 +18,7 @@ const CategoryBox = ({ label, icon: Icon, selected }) => {
 
       const updatedQuery = { ...currentQuery, category: label };
       const url = qs.stringifyUrl({
-        url: "/apartments",
+        url: "/",
         query: updatedQuery,
       });
 

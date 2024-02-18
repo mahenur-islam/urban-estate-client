@@ -6,6 +6,7 @@ import Signup from '../pages/signup/Signup'
 import ErrorPage from '../pages/Erroepage'
 import Property from '../pages/property/Property'
 import Apartments from '../pages/Apartments/Apartments'
+import ApartmentDetails from '../pages/ApartmentDetails/ApartmentDetails'
 
 
 
@@ -25,6 +26,10 @@ export const router = createBrowserRouter([
         element: <Property />,
       },
       {
+        path:'/apartment/:id',
+        element: <ApartmentDetails />
+      },
+      {
         path: '/apartments',
         element: <Apartments />,
       },
@@ -33,5 +38,5 @@ export const router = createBrowserRouter([
       { path: '/dashboard', element: <Signup /> },
     ],
   },
- 
+
 ])

@@ -6,13 +6,16 @@ import { useEffect, useState } from "react";
 import ApartmentCards from "../../components/ApartmentCards/ApartmentCards";
 import Categories from "../../components/Categories/Categories";
 import { useSearchParams } from "react-router-dom";
+import Loader from "../../components/shared/Loader";
 
 const Apartments = () => {
   const [apartments, setApartments] = useState([]);
   const [params, setParams] = useSearchParams();
+  const [loading, setLoading] = useState(true);
   const category = params.get("category");
 
   useEffect(() => {
+    setLoading(true);
     fetch("./apartments.json")
       .then((res) => res.json())
       .then((data) => {
@@ -24,19 +27,24 @@ const Apartments = () => {
         } else {
           setApartments(data);
         }
+
+        setLoading(false);
       });
   }, [category]);
 
+  if (loading) return <Loader />;
+
   return (
     <Container>
-      <div>
-        <Categories />
-      </div>
       <Heading
+        center
         title={"Discover Our Apartments"}
         subtitle={"Ready apartments are available for rent or sell"}
       />
 
+      <div>
+        <Categories />
+      </div>
       {apartments && apartments.length > 0 ? (
         <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-3 py-10 px-2 min-h-[40vh]">
           {apartments.map((apartment) => (

@@ -1,9 +1,11 @@
+import { Link } from "react-router-dom";
+
 /* eslint-disable react/prop-types */
 const ApartmentCards = ({ apartment }) => {
     const {houseName, images, propertyPrice} = apartment;
     return (
         <div>
-            <div className="card col-span-1 cursor-pointer w-full md:w-64 lg:w-80 glass mx-auto group">
+            <Link to={`/apartment/${apartment?._id}`} className="card col-span-1 cursor-pointer w-full md:w-64 lg:w-80 glass mx-auto group">
                 <figure>
                     <img
                         src={images.bedroom1}
@@ -17,7 +19,7 @@ const ApartmentCards = ({ apartment }) => {
                         <button className="btn btn-primary">{propertyPrice}</button>
                     </div>
                 </div>
-            </div>
+            </Link>
         </div>
     );
 };
