@@ -8,8 +8,8 @@ import { LuKanbanSquareDashed } from "react-icons/lu";
 const Headers = ({apartment}) => {
     return (
         <div className="py-10 flex justify-between items-center w-full">
-        <div>
-          <h1 className="text-sm md:text-xl lg:text-4xl font-bold">
+        <div className="space-y-3">
+          <h1 className="text-sm md:text-xl lg:text-5xl font-bold">
             {apartment?.houseName}
           </h1>
           <div className="flex gap-1">
@@ -17,7 +17,7 @@ const Headers = ({apartment}) => {
             <p className="font-semibold">{apartment?.address?.state}, </p>
             <p className="font-semibold">{apartment?.address?.country} </p>
             <div className="text-gray-400">|</div>
-            <p className="text-orange-700 font-semibold flex justify-center items-center gap-2"><FaCircle size={10}/>For Sell </p>
+            <p className="text-orange-900 font-semibold flex justify-center items-center gap-2"><FaCircle size={10}/>For Sell </p>
             <div className="text-gray-400">|</div>
             <p className="font-semibold flex justify-center items-center gap-1"> <CiClock2 />6 years ago</p>
             <div className="text-gray-400">|</div>

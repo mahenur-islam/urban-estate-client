@@ -6,6 +6,11 @@ import { Helmet } from "react-helmet-async";
 import Headers from "./Headers";
 import PhotoGallery from "./PhotoGallery";
 import Overview from "./Overview";
+import PropertyDescription from "./PropertyDescription";
+import PropertyAddress from "./PropertyAddress";
+import FeaturesAmenities from "./FeaturesAmenities";
+import OwnerInfo from "./OwnerInfo";
+import ContactForm from "./ContactForm";
 
 
 const ApartmentDetails = () => {
@@ -41,6 +46,22 @@ const ApartmentDetails = () => {
         <div className="py-10">
             <Overview apartment={apartment} />
         </div>
+        <div className="py-10">
+            <PropertyDescription apartment={apartment} />
+        </div>
+        <div className="py-10">
+            <PropertyAddress address={apartment.address} />
+        </div>
+        <div className="py-10">
+            <FeaturesAmenities featuresAndAmenities={apartment.featuresAndAmenities} />
+        </div>
+        <div className="py-10">
+            <OwnerInfo featuresAndAmenities={apartment.featuresAndAmenities} />
+        </div>
+        <div>
+          <ContactForm />
+        </div>
+
       </Container>
     </div>
   );
