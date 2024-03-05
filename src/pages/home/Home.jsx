@@ -1,6 +1,10 @@
 import { Helmet } from "react-helmet-async";
 import Carousel from "../../components/Carousel/Carousel";
-import Apartments from "../Apartments/Apartments";
+import Categories from '../../components/Categories/Categories'
+import Container from "../../components/shared/Container";
+import FeaturedListing from "../../components/FeaturedListing/FeaturedListing";
+import CitySearch from "../../components/CitySearch/CitySearch";
+// import Apartments from "../Apartments/Apartments";
 const Home = () => {
   return (
     <div>
@@ -10,9 +14,13 @@ const Home = () => {
       </title>
     </Helmet>
       <Carousel />
+     <Container>
+     <Categories />
       <div className="min-h-[60vh]">
-        <Apartments />
+       <CitySearch />
       </div>
+      <FeaturedListing />
+     </Container>
     </div>
   );
 };

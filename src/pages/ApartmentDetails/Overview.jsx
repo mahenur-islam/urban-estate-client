@@ -9,7 +9,7 @@ const Overview = ({apartment}) => {
             <IoBedOutline size={30}/>
             </div>
             <div>
-                <h1 className="font-semibold">Bedrooms</h1>
+                <h1 className="font-semibold">{bedrooms}</h1>
                 <p>3</p>
             </div>
         </div>
@@ -18,7 +18,7 @@ const Overview = ({apartment}) => {
             <IoBedOutline size={30}/>
             </div>
             <div>
-                <h1 className="font-semibold">Bedrooms</h1>
+                <h1 className="font-semibold">{bathrooms}</h1>
                 <p>3</p>
             </div>
         </div>
@@ -27,7 +27,7 @@ const Overview = ({apartment}) => {
             <IoBedOutline size={30}/>
             </div>
             <div>
-                <h1 className="font-semibold">Bedrooms</h1>
+                <h1 className="font-semibold"></h1>
                 <p>3</p>
             </div>
         </div>

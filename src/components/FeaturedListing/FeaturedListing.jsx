@@ -1,7 +1,8 @@
+import Heading from '../shared/Heading'
 const FeaturedListing = () => {
     return (
         <div>
-            Featured Listing
+            <Heading title ={'Discover Our Fearuted Listing'}/>
         </div>
     );
 };

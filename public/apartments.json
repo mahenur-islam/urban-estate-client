@@ -72,7 +72,7 @@
   "address": {
       "country": "United States",
       "state": "New York",
-      "city": "New York City",
+      "city": "New York",
       "roadNumber": "Broadway",
       "houseNumber": 567
   },
@@ -129,6 +129,401 @@
       "busStop": "Broadway Bus Station",
       "park": "Central Park"
   }
+},
+{
+    "_id": "3",
+    "category": "Townhall",
+    "houseName": "Serene Haven",
+    "address": {
+        "country": "United States",
+        "state": "California",
+        "city": "Baltimore",
+        "roadNumber": "Oak Street",
+        "houseNumber": 1234
+    },
+    "roomSize": 2500,
+    "bedrooms": [
+        {"name": "Master Bedroom", "size": 300},
+        {"name": "Bedroom 2", "size": 250},
+        {"name": "Bedroom 3", "size": 200}
+    ],
+    "livingSpaces": {
+        "livingRoom": 400,
+        "diningRoom": 150
+    },
+    "bathrooms": {
+        "masterBathroom": {"size": 120},
+        "guestBathroom": {"size": 80},
+        "count": 3
+    },
+    "garages": 2,
+    "propertyDetails": "Beautiful two-story home with modern architecture and stunning interior design.",
+    "shortDetails": "Spacious 3-bedroom, 3-bathroom home with a contemporary feel, ideal for families.",
+    "ownerInformation": {
+        "phoneNumber": "+1 (555) 123-4567",
+        "emailAddress": "owner@example.com",
+        "contactInfo": "Available between 9 AM - 6 PM"
+    },
+    "propertyPrice": 1200000,
+    "propertyID": "SF123456",
+    "propertySizeOverall": 3500,
+    "propertyType": "Single Family Home",
+    "builtYear": 2020,
+    "availability": "Ready to move in",
+    "featuresAndAmenities": [
+        "Spacious Kitchen",
+        "Hardwood Floors",
+        "Central Heating and Cooling",
+        "Walk-in Closets",
+        "Private Backyard"
+    ],
+    "floorPlan": {
+        "firstFloor": ["Living Room", "Dining Room", "Kitchen", "Guest Bedroom", "Bathroom"],
+        "secondFloor": ["Master Bedroom with Ensuite", "Bedroom 2", "Common Bathroom"]
+    },
+    "images": {
+        "bedroom1": "https://i.ibb.co/KDCWjS0/43c05f1189c02595b15223e22c9cc530.jpg",
+        "livingRoom": "[Link to Living Room Image]",
+        "masterBathroom": "[Link to Master Bathroom Image]",
+        "garage": "[Link to Garage Image]"
+    },
+    "nearbyFacilities": {
+        "hospitals": "St. Mary's Medical Center",
+        "schools": "Oak Elementary School",
+        "gym": "Fitness Junction",
+        "pools": "City Aquatic Center",
+        "busStop": "Oak Street Bus Station",
+        "park": "Green Meadows Park"
+    }
+},
+{
+    "_id": "4",
+    "category": "Bunglow",
+    "houseName": "Serene Haven",
+    "address": {
+        "country": "United States",
+        "state": "California",
+        "city": "Baltimore",
+        "roadNumber": "Oak Street",
+        "houseNumber": 1234
+    },
+    "roomSize": 2500,
+    "bedrooms": [
+        {"name": "Master Bedroom", "size": 300},
+        {"name": "Bedroom 2", "size": 250},
+        {"name": "Bedroom 3", "size": 200}
+    ],
+    "livingSpaces": {
+        "livingRoom": 400,
+        "diningRoom": 150
+    },
+    "bathrooms": {
+        "masterBathroom": {"size": 120},
+        "guestBathroom": {"size": 80},
+        "count": 3
+    },
+    "garages": 2,
+    "propertyDetails": "Beautiful two-story home with modern architecture and stunning interior design.",
+    "shortDetails": "Spacious 3-bedroom, 3-bathroom home with a contemporary feel, ideal for families.",
+    "ownerInformation": {
+        "phoneNumber": "+1 (555) 123-4567",
+        "emailAddress": "owner@example.com",
+        "contactInfo": "Available between 9 AM - 6 PM"
+    },
+    "propertyPrice": 1200000,
+    "propertyID": "SF123456",
+    "propertySizeOverall": 3500,
+    "propertyType": "Single Family Home",
+    "builtYear": 2020,
+    "availability": "Ready to move in",
+    "featuresAndAmenities": [
+        "Spacious Kitchen",
+        "Hardwood Floors",
+        "Central Heating and Cooling",
+        "Walk-in Closets",
+        "Private Backyard"
+    ],
+    "floorPlan": {
+        "firstFloor": ["Living Room", "Dining Room", "Kitchen", "Guest Bedroom", "Bathroom"],
+        "secondFloor": ["Master Bedroom with Ensuite", "Bedroom 2", "Common Bathroom"]
+    },
+    "images": {
+        "bedroom1": "https://i.ibb.co/KDCWjS0/43c05f1189c02595b15223e22c9cc530.jpg",
+        "livingRoom": "[Link to Living Room Image]",
+        "masterBathroom": "[Link to Master Bathroom Image]",
+        "garage": "[Link to Garage Image]"
+    },
+    "nearbyFacilities": {
+        "hospitals": "St. Mary's Medical Center",
+        "schools": "Oak Elementary School",
+        "gym": "Fitness Junction",
+        "pools": "City Aquatic Center",
+        "busStop": "Oak Street Bus Station",
+        "park": "Green Meadows Park"
+    }
+},
+{
+    "_id": "5",
+    "category": "Loft",
+    "houseName": "Serene Haven",
+    "address": {
+        "country": "United States",
+        "state": "California",
+        "city": "San Francisco",
+        "roadNumber": "Oak Street",
+        "houseNumber": 1234
+    },
+    "roomSize": 2500,
+    "bedrooms": [
+        {"name": "Master Bedroom", "size": 300},
+        {"name": "Bedroom 2", "size": 250},
+        {"name": "Bedroom 3", "size": 200}
+    ],
+    "livingSpaces": {
+        "livingRoom": 400,
+        "diningRoom": 150
+    },
+    "bathrooms": {
+        "masterBathroom": {"size": 120},
+        "guestBathroom": {"size": 80},
+        "count": 3
+    },
+    "garages": 2,
+    "propertyDetails": "Beautiful two-story home with modern architecture and stunning interior design.",
+    "shortDetails": "Spacious 3-bedroom, 3-bathroom home with a contemporary feel, ideal for families.",
+    "ownerInformation": {
+        "phoneNumber": "+1 (555) 123-4567",
+        "emailAddress": "owner@example.com",
+        "contactInfo": "Available between 9 AM - 6 PM"
+    },
+    "propertyPrice": 1200000,
+    "propertyID": "SF123456",
+    "propertySizeOverall": 3500,
+    "propertyType": "Single Family Home",
+    "builtYear": 2020,
+    "availability": "Ready to move in",
+    "featuresAndAmenities": [
+        "Spacious Kitchen",
+        "Hardwood Floors",
+        "Central Heating and Cooling",
+        "Walk-in Closets",
+        "Private Backyard"
+    ],
+    "floorPlan": {
+        "firstFloor": ["Living Room", "Dining Room", "Kitchen", "Guest Bedroom", "Bathroom"],
+        "secondFloor": ["Master Bedroom with Ensuite", "Bedroom 2", "Common Bathroom"]
+    },
+    "images": {
+        "bedroom1": "https://i.ibb.co/KDCWjS0/43c05f1189c02595b15223e22c9cc530.jpg",
+        "livingRoom": "[Link to Living Room Image]",
+        "masterBathroom": "[Link to Master Bathroom Image]",
+        "garage": "[Link to Garage Image]"
+    },
+    "nearbyFacilities": {
+        "hospitals": "St. Mary's Medical Center",
+        "schools": "Oak Elementary School",
+        "gym": "Fitness Junction",
+        "pools": "City Aquatic Center",
+        "busStop": "Oak Street Bus Station",
+        "park": "Green Meadows Park"
+    }
+},
+{
+    "_id": "6",
+    "category": "Villa",
+    "houseName": "Serene Haven",
+    "address": {
+        "country": "United States",
+        "state": "California",
+        "city": "Austin",
+        "roadNumber": "Oak Street",
+        "houseNumber": 1234
+    },
+    "roomSize": 2500,
+    "bedrooms": [
+        {"name": "Master Bedroom", "size": 300},
+        {"name": "Bedroom 2", "size": 250},
+        {"name": "Bedroom 3", "size": 200}
+    ],
+    "livingSpaces": {
+        "livingRoom": 400,
+        "diningRoom": 150
+    },
+    "bathrooms": {
+        "masterBathroom": {"size": 120},
+        "guestBathroom": {"size": 80},
+        "count": 3
+    },
+    "garages": 2,
+    "propertyDetails": "Beautiful two-story home with modern architecture and stunning interior design.",
+    "shortDetails": "Spacious 3-bedroom, 3-bathroom home with a contemporary feel, ideal for families.",
+    "ownerInformation": {
+        "phoneNumber": "+1 (555) 123-4567",
+        "emailAddress": "owner@example.com",
+        "contactInfo": "Available between 9 AM - 6 PM"
+    },
+    "propertyPrice": 1200000,
+    "propertyID": "SF123456",
+    "propertySizeOverall": 3500,
+    "propertyType": "Single Family Home",
+    "builtYear": 2020,
+    "availability": "Ready to move in",
+    "featuresAndAmenities": [
+        "Spacious Kitchen",
+        "Hardwood Floors",
+        "Central Heating and Cooling",
+        "Walk-in Closets",
+        "Private Backyard"
+    ],
+    "floorPlan": {
+        "firstFloor": ["Living Room", "Dining Room", "Kitchen", "Guest Bedroom", "Bathroom"],
+        "secondFloor": ["Master Bedroom with Ensuite", "Bedroom 2", "Common Bathroom"]
+    },
+    "images": {
+        "bedroom1": "https://i.ibb.co/KDCWjS0/43c05f1189c02595b15223e22c9cc530.jpg",
+        "livingRoom": "[Link to Living Room Image]",
+        "masterBathroom": "[Link to Master Bathroom Image]",
+        "garage": "[Link to Garage Image]"
+    },
+    "nearbyFacilities": {
+        "hospitals": "St. Mary's Medical Center",
+        "schools": "Oak Elementary School",
+        "gym": "Fitness Junction",
+        "pools": "City Aquatic Center",
+        "busStop": "Oak Street Bus Station",
+        "park": "Green Meadows Park"
+    }
+},
+{
+    "_id": "7",
+    "category": "Villa",
+    "houseName": "Serene Haven",
+    "address": {
+        "country": "United States",
+        "state": "California",
+        "city": "Philadelphia",
+        "roadNumber": "Oak Street",
+        "houseNumber": 1234
+    },
+    "roomSize": 2500,
+    "bedrooms": [
+        {"name": "Master Bedroom", "size": 300},
+        {"name": "Bedroom 2", "size": 250},
+        {"name": "Bedroom 3", "size": 200}
+    ],
+    "livingSpaces": {
+        "livingRoom": 400,
+        "diningRoom": 150
+    },
+    "bathrooms": {
+        "masterBathroom": {"size": 120},
+        "guestBathroom": {"size": 80},
+        "count": 3
+    },
+    "garages": 2,
+    "propertyDetails": "Beautiful two-story home with modern architecture and stunning interior design.",
+    "shortDetails": "Spacious 3-bedroom, 3-bathroom home with a contemporary feel, ideal for families.",
+    "ownerInformation": {
+        "phoneNumber": "+1 (555) 123-4567",
+        "emailAddress": "owner@example.com",
+        "contactInfo": "Available between 9 AM - 6 PM"
+    },
+    "propertyPrice": 1200000,
+    "propertyID": "SF123456",
+    "propertySizeOverall": 3500,
+    "propertyType": "Single Family Home",
+    "builtYear": 2020,
+    "availability": "Ready to move in",
+    "featuresAndAmenities": [
+        "Spacious Kitchen",
+        "Hardwood Floors",
+        "Central Heating and Cooling",
+        "Walk-in Closets",
+        "Private Backyard"
+    ],
+    "floorPlan": {
+        "firstFloor": ["Living Room", "Dining Room", "Kitchen", "Guest Bedroom", "Bathroom"],
+        "secondFloor": ["Master Bedroom with Ensuite", "Bedroom 2", "Common Bathroom"]
+    },
+    "images": {
+        "bedroom1": "https://i.ibb.co/KDCWjS0/43c05f1189c02595b15223e22c9cc530.jpg",
+        "livingRoom": "[Link to Living Room Image]",
+        "masterBathroom": "[Link to Master Bathroom Image]",
+        "garage": "[Link to Garage Image]"
+    },
+    "nearbyFacilities": {
+        "hospitals": "St. Mary's Medical Center",
+        "schools": "Oak Elementary School",
+        "gym": "Fitness Junction",
+        "pools": "City Aquatic Center",
+        "busStop": "Oak Street Bus Station",
+        "park": "Green Meadows Park"
+    }
+},
+{
+    "_id": "8",
+    "category": "Bunglow",
+    "houseName": "Serene Haven",
+    "address": {
+        "country": "United States",
+        "state": "California",
+        "city": "San Francisco",
+        "roadNumber": "Oak Street",
+        "houseNumber": 1234
+    },
+    "roomSize": 2500,
+    "bedrooms": [
+        {"name": "Master Bedroom", "size": 300},
+        {"name": "Bedroom 2", "size": 250},
+        {"name": "Bedroom 3", "size": 200}
+    ],
+    "livingSpaces": {
+        "livingRoom": 400,
+        "diningRoom": 150
+    },
+    "bathrooms": {
+        "masterBathroom": {"size": 120},
+        "guestBathroom": {"size": 80},
+        "count": 3
+    },
+    "garages": 2,
+    "propertyDetails": "Beautiful two-story home with modern architecture and stunning interior design.",
+    "shortDetails": "Spacious 3-bedroom, 3-bathroom home with a contemporary feel, ideal for families.",
+    "ownerInformation": {
+        "phoneNumber": "+1 (555) 123-4567",
+        "emailAddress": "owner@example.com",
+        "contactInfo": "Available between 9 AM - 6 PM"
+    },
+    "propertyPrice": 1200000,
+    "propertyID": "SF123456",
+    "propertySizeOverall": 3500,
+    "propertyType": "Single Family Home",
+    "builtYear": 2020,
+    "availability": "Ready to move in",
+    "featuresAndAmenities": [
+        "Spacious Kitchen",
+        "Hardwood Floors",
+        "Central Heating and Cooling",
+        "Walk-in Closets",
+        "Private Backyard"
+    ],
+    "floorPlan": {
+        "firstFloor": ["Living Room", "Dining Room", "Kitchen", "Guest Bedroom", "Bathroom"],
+        "secondFloor": ["Master Bedroom with Ensuite", "Bedroom 2", "Common Bathroom"]
+    },
+    "images": {
+        "bedroom1": "https://i.ibb.co/KDCWjS0/43c05f1189c02595b15223e22c9cc530.jpg",
+        "livingRoom": "[Link to Living Room Image]",
+        "masterBathroom": "[Link to Master Bathroom Image]",
+        "garage": "[Link to Garage Image]"
+    },
+    "nearbyFacilities": {
+        "hospitals": "St. Mary's Medical Center",
+        "schools": "Oak Elementary School",
+        "gym": "Fitness Junction",
+        "pools": "City Aquatic Center",
+        "busStop": "Oak Street Bus Station",
+        "park": "Green Meadows Park"
+    }
 }
-
 ]

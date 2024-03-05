@@ -5,7 +5,7 @@ import Loader from "../../components/shared/Loader";
 import { Helmet } from "react-helmet-async";
 import Headers from "./Headers";
 import PhotoGallery from "./PhotoGallery";
-import Overview from "./Overview";
+// import Overview from "./Overview";
 import PropertyDescription from "./PropertyDescription";
 import PropertyAddress from "./PropertyAddress";
 import FeaturesAmenities from "./FeaturesAmenities";
@@ -43,9 +43,9 @@ const ApartmentDetails = () => {
         <div>
             <PhotoGallery apartment={apartment}/>
         </div>
-        <div className="py-10">
+        {/* <div className="py-10">
             <Overview apartment={apartment} />
-        </div>
+        </div> */}
         <div className="py-10">
             <PropertyDescription apartment={apartment} />
         </div>

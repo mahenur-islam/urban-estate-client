@@ -18,7 +18,7 @@ const CategoryBox = ({ label, icon: Icon, selected }) => {
 
       const updatedQuery = { ...currentQuery, category: label };
       const url = qs.stringifyUrl({
-        url: "/",
+        url: "/apartments",
         query: updatedQuery,
       });
 
@@ -27,10 +27,10 @@ const CategoryBox = ({ label, icon: Icon, selected }) => {
 
   return (
     <div
-      className={`flex justify-center items-center flex-col p-3 rounded-xl min-w-32 group hover:shadow-xl cursor-pointer ${selected ? 'bg-purple-900 text-white':'bg-gray-100'}`}
+      className={`flex justify-center items-center  p-3 rounded-xl min-w-32 group hover:shadow-xl cursor-pointer ${selected ? 'bg-purple-900 text-white':'bg-gray-100'}`}
       onClick={handleCategory}
     >
-      <div className="p-2 rounded-full group-hover:bg-purple-900 group-hover:text-white">
+      <div className="p-1 rounded-full">
         <Icon size={26} />
       </div>
       <h1 className="font-semibold">{label}</h1>

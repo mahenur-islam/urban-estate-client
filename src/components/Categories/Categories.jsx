@@ -1,5 +1,5 @@
 /* eslint-disable no-unused-vars */
-import Heading from "../shared/Heading";
+
 import { categories } from "../../../public/categoriesData";
 import { useSearchParams } from "react-router-dom";
 import CategoryBox from "./CategoryBox";
@@ -11,8 +11,7 @@ const Categories = () => {
     console.log(category)
   return (
     <div className="min-h-[30vh]">
-      <Heading title={"Category"} />
-      <div className="flex gap-3 justify-start items-center py-10 overflow-x-auto">
+      <div className="flex gap-3 justify-start items-center pt-10 overflow-x-auto">
         {categories.map((item) => (
           <CategoryBox
             key={item.label}

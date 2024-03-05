@@ -7,6 +7,7 @@ import ErrorPage from '../pages/Erroepage'
 import Property from '../pages/property/Property'
 import Apartments from '../pages/Apartments/Apartments'
 import ApartmentDetails from '../pages/ApartmentDetails/ApartmentDetails'
+import Dashboard from '../pages/Dashboard/Dashboard'
 
 
 
@@ -35,7 +36,7 @@ export const router = createBrowserRouter([
       },
       { path: '/login', element: <Login /> },
       { path: '/signup', element: <Signup /> },
-      { path: '/dashboard', element: <Signup /> },
+      { path: '/dashboard', element: <Dashboard />  },
     ],
   },
 
