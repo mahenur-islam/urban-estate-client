@@ -33,7 +33,7 @@
         "emailAddress": "owner@example.com",
         "contactInfo": "Available between 9 AM - 6 PM"
     },
-    "propertyPrice": 1200000,
+    "propertyPrice": 12000,
     "propertyID": "SF123456",
     "propertySizeOverall": 3500,
     "propertyType": "Single Family Home",
@@ -51,7 +51,7 @@
         "secondFloor": ["Master Bedroom with Ensuite", "Bedroom 2", "Common Bathroom"]
     },
     "images": {
-        "bedroom1": "https://i.ibb.co/KDCWjS0/43c05f1189c02595b15223e22c9cc530.jpg",
+        "bedroom1": "https://i.ibb.co/Qfy1mJW/pexels-huseyn-kamaladdin-667838.jpg",
         "livingRoom": "[Link to Living Room Image]",
         "masterBathroom": "[Link to Master Bathroom Image]",
         "garage": "[Link to Garage Image]"
@@ -99,7 +99,7 @@
       "emailAddress": "owner2@example.com",
       "contactInfo": "Available from 10 AM - 7 PM"
   },
-  "propertyPrice": 950000,
+  "propertyPrice": 95000,
   "propertyID": "NYC567890",
   "propertySizeOverall": 2800,
   "propertyType": "Condo",
@@ -116,7 +116,8 @@
       "secondFloor": ["Master Suite", "Office", "Master Bathroom"]
   },
   "images": {
-      "masterBedroom": "[Link to Master Bedroom Image]",
+        "bedroom1":"https://i.ibb.co/Qfy1mJW/pexels-huseyn-kamaladdin-667838.jpg",
+      "masterBedroom": "",
       "livingRoom": "[Link to Living Room Image]",
       "bathroom": "[Link to Bathroom Image]",
       "garage": "[Link to Garage Image]"
@@ -164,7 +165,7 @@
         "emailAddress": "owner@example.com",
         "contactInfo": "Available between 9 AM - 6 PM"
     },
-    "propertyPrice": 1200000,
+    "propertyPrice": 120000,
     "propertyID": "SF123456",
     "propertySizeOverall": 3500,
     "propertyType": "Single Family Home",
@@ -182,8 +183,8 @@
         "secondFloor": ["Master Bedroom with Ensuite", "Bedroom 2", "Common Bathroom"]
     },
     "images": {
-        "bedroom1": "https://i.ibb.co/KDCWjS0/43c05f1189c02595b15223e22c9cc530.jpg",
-        "livingRoom": "[Link to Living Room Image]",
+        "bedroom1": "https://i.ibb.co/Qfy1mJW/pexels-huseyn-kamaladdin-667838.jpg",
+        "livingRoom": "https://i.ibb.co/Qfy1mJW/pexels-huseyn-kamaladdin-667838.jpg",
         "masterBathroom": "[Link to Master Bathroom Image]",
         "garage": "[Link to Garage Image]"
     },
@@ -248,10 +249,10 @@
         "secondFloor": ["Master Bedroom with Ensuite", "Bedroom 2", "Common Bathroom"]
     },
     "images": {
-        "bedroom1": "https://i.ibb.co/KDCWjS0/43c05f1189c02595b15223e22c9cc530.jpg",
-        "livingRoom": "[Link to Living Room Image]",
-        "masterBathroom": "[Link to Master Bathroom Image]",
-        "garage": "[Link to Garage Image]"
+        "bedroom1": "https://i.ibb.co/Ws4wn2x/pexels-pixabay-276724.jpg",
+        "livingRoom": "https://i.ibb.co/WKckYq0/pexels-pixabay-279746.jpg",
+        "masterBathroom": "https://i.ibb.co/Mf0Rywh/pexels-jean-van-der-meulen-1457842.jpg",
+        "garage": "https://i.ibb.co/5kKTRQy/pexels-pixabay-259962.jpg"
     },
     "nearbyFacilities": {
         "hospitals": "St. Mary's Medical Center",
@@ -314,7 +315,7 @@
         "secondFloor": ["Master Bedroom with Ensuite", "Bedroom 2", "Common Bathroom"]
     },
     "images": {
-        "bedroom1": "https://i.ibb.co/KDCWjS0/43c05f1189c02595b15223e22c9cc530.jpg",
+        "bedroom1": "https://i.ibb.co/gVz5fFR/pexels-vika-glitter-1648776.jpg",
         "livingRoom": "[Link to Living Room Image]",
         "masterBathroom": "[Link to Master Bathroom Image]",
         "garage": "[Link to Garage Image]"
@@ -380,7 +381,7 @@
         "secondFloor": ["Master Bedroom with Ensuite", "Bedroom 2", "Common Bathroom"]
     },
     "images": {
-        "bedroom1": "https://i.ibb.co/KDCWjS0/43c05f1189c02595b15223e22c9cc530.jpg",
+        "bedroom1": "https://i.ibb.co/54BmMkq/pexels-pixabay-259580.jpg",
         "livingRoom": "[Link to Living Room Image]",
         "masterBathroom": "[Link to Master Bathroom Image]",
         "garage": "[Link to Garage Image]"
@@ -446,7 +447,7 @@
         "secondFloor": ["Master Bedroom with Ensuite", "Bedroom 2", "Common Bathroom"]
     },
     "images": {
-        "bedroom1": "https://i.ibb.co/KDCWjS0/43c05f1189c02595b15223e22c9cc530.jpg",
+        "bedroom1": "https://i.ibb.co/FKs9p39/pexels-pixabay-271795.jpg",
         "livingRoom": "[Link to Living Room Image]",
         "masterBathroom": "[Link to Master Bathroom Image]",
         "garage": "[Link to Garage Image]"
@@ -512,7 +513,7 @@
         "secondFloor": ["Master Bedroom with Ensuite", "Bedroom 2", "Common Bathroom"]
     },
     "images": {
-        "bedroom1": "https://i.ibb.co/KDCWjS0/43c05f1189c02595b15223e22c9cc530.jpg",
+        "bedroom1": "https://i.ibb.co/TwKybBs/pexels-pixabay-271619.jpg",
         "livingRoom": "[Link to Living Room Image]",
         "masterBathroom": "[Link to Master Bathroom Image]",
         "garage": "[Link to Garage Image]"
@@ -527,3 +528,5 @@
     }
 }
 ]
+
+
