@@ -8,6 +8,8 @@ import Property from '../pages/property/Property'
 import Apartments from '../pages/Apartments/Apartments'
 import ApartmentDetails from '../pages/ApartmentDetails/ApartmentDetails'
 import Dashboard from '../pages/Dashboard/Dashboard'
+import AddProperty from '../pages/AddProperty/AddProperty'
+import Blog from '../pages/Blog/Blog'
 
 
 
@@ -25,6 +27,14 @@ export const router = createBrowserRouter([
       {
         path: '/property',
         element: <Property />,
+      },
+      {
+        path: '/blog',
+        element: <Blog />,
+      },
+      {
+        path: '/add-property',
+        element: <AddProperty />,
       },
       {
         path:'/apartment/:id',

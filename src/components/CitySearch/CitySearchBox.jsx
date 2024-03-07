@@ -4,11 +4,11 @@ import { useNavigate, useSearchParams } from "react-router-dom";
 import qs from "query-string";
 
 const CitySearchBox = ({ label, icon: Icon, selected }) => {
-   //using query string to find cards according to the category we select
+   //using query string to find cards according to the city we select
    const [params, setParams] = useSearchParams(); //take a state to store params
-   const navigate = useNavigate(); //useNavigate - used to navigate the category label
+   const navigate = useNavigate(); //useNavigate - used to navigate the city label
  
-   //function to handleCategory search
+   //function to handleCity search
    const handleCity= () => {
      let currentQuery = {};
      if (params) {
@@ -26,7 +26,7 @@ const CitySearchBox = ({ label, icon: Icon, selected }) => {
  
    return (
      <div
-       className={`flex justify-center items-center  p-3 rounded-xl min-w-32 group hover:shadow-xl cursor-pointer ${selected ? 'bg-purple-900 text-white':'bg-gray-100'}`}
+       className={`flex justify-center items-center  min-w-32 group hover:shadow-xl cursor-pointer ${selected ? 'bg-purple-900 text-white':'bg-gray-100'}`}
        onClick={handleCity}
      >
        {/* <div className="p-1 rounded-full">
