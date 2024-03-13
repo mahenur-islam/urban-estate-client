@@ -4,8 +4,8 @@
 
 
 // eslint-disable-next-line react/prop-types
-const PropertyDescription = ({apartment}) => {
-    const {propertyID, propertyPrice,propertySizeOverall, propertyType,builtYear,bedrooms,bathrooms,garages} = apartment
+const PropertyDescription = ({property}) => {
+    const {propertyID, propertyPrice,propertySizeOverall, propertyType,builtYear,bedrooms,bathrooms,garages} = property
     const numberOfBedRooms = bedrooms.length;
     const numberOfBathRooms = bathrooms.length;
     console.log(numberOfBedRooms);

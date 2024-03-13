@@ -4,12 +4,11 @@ import Home from '../pages/Home/Home'
 import Login from '../pages/login/Login'
 import Signup from '../pages/signup/Signup'
 import ErrorPage from '../pages/Erroepage'
-import Property from '../pages/property/Property'
-import Apartments from '../pages/Apartments/Apartments'
-import ApartmentDetails from '../pages/ApartmentDetails/ApartmentDetails'
 import Dashboard from '../pages/Dashboard/Dashboard'
 import AddProperty from '../pages/AddProperty/AddProperty'
 import Blog from '../pages/Blog/Blog'
+import Properties from '../pages/Properties/Properties'
+import PropertyDetails from '../pages/PropertyDetails/PropertyDetails'
 
 
 
@@ -25,10 +24,6 @@ export const router = createBrowserRouter([
         element: <Home />,
       },
       {
-        path: '/property',
-        element: <Property />,
-      },
-      {
         path: '/blog',
         element: <Blog />,
       },
@@ -37,12 +32,12 @@ export const router = createBrowserRouter([
         element: <AddProperty />,
       },
       {
-        path:'/apartment/:id',
-        element: <ApartmentDetails />
+        path:'/property/:id',
+        element: <PropertyDetails />
       },
       {
-        path: '/apartments',
-        element: <Apartments />,
+        path: '/properties',
+        element: <Properties />,
       },
       { path: '/login', element: <Login /> },
       { path: '/signup', element: <Signup /> },

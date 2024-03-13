@@ -3,14 +3,13 @@
 import Heading from "../../components/shared/Heading";
 import Container from "../../components/shared/Container";
 import { useEffect, useState } from "react";
-import ApartmentCards from "../../components/ApartmentCards/ApartmentCards";
 import Categories from "../../components/Categories/Categories";
 import { useSearchParams } from "react-router-dom";
 import Loader from "../../components/shared/Loader";
-import CitySearch from "../../components/CitySearch/CitySearch";
+import PropertyCards from "../../components/PropertyCards/PropertyCards";
 
-const Apartments = () => {
-  const [apartments, setApartments] = useState([]);
+const Properties = () => {
+  const [properties, setProperties] = useState([]);
   const [params, setParams] = useSearchParams();
   const [loading, setLoading] = useState(true);
   const category = params.get("category");
@@ -18,24 +17,24 @@ const Apartments = () => {
 
   useEffect(() => {
     setLoading(true);
-    fetch("./apartments.json")
+    fetch("./properties.json")
       .then((res) => res.json())
       .then((data) => {
-        let filteredApartments = data;
+        let filteredProperties = data;
 
         if (category && category.toLowerCase() !== "all") {
-          filteredApartments = filteredApartments.filter(
-            (apartment) => apartment.category === category
+          filteredProperties = filteredProperties.filter(
+            (property) => property.category === category
           );
         }
 
         if (city && city.toLowerCase() !== "all") {
-          filteredApartments = filteredApartments.filter(
-            (apartment) => apartment.address.city === city
+          filteredProperties = filteredProperties.filter(
+            (property) => property.address.city === city
           );
         }
 
-        setApartments(filteredApartments);
+        setProperties(filteredProperties);
         setLoading(false);
       });
   }, [category, city]);
@@ -55,18 +54,18 @@ const Apartments = () => {
       </div>
       <div className="w-full grid grid-cols-2 md:grid-cols-12">
         <div className="col-span-3 p-2">
-          <h1 className="font-semibold text-center text-2xl mb-5">Cities</h1>
-          <CitySearch />
+          {/* <h1 className="font-bold text-center text-xl mb-5">Filter Your Property</h1> */}
+          {/* <CitySearch /> */}
           <div className="divider"></div>
         </div>
         <div className="col-span-9">
-          {apartments && apartments.length > 0 ? (
+          {properties && properties.length > 0 ? (
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 py-10 px-2 min-h-[40vh]">
-              {apartments.map((apartment) => (
-                <ApartmentCards
-                  key={apartment._id}
-                  apartment={apartment}
-                ></ApartmentCards>
+              {properties.map((property) => (
+                <PropertyCards
+                  key={property._id}
+                  property={property}
+                ></PropertyCards>
               ))}
             </div>
           ) : (
@@ -84,4 +83,4 @@ const Apartments = () => {
   );
 };
 
-export default Apartments;
+export default Properties;

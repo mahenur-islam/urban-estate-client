@@ -13,18 +13,18 @@ import OwnerInfo from "./OwnerInfo";
 import ContactForm from "./ContactForm";
 
 
-const ApartmentDetails = () => {
+const PropertyDetails = () => {
   const { id } = useParams();
-  const [apartment, setApartment] = useState({});
+  const [property, setProperty] = useState({});
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     setLoading(true);
-    fetch("/apartments.json")
+    fetch("/properties.json")
       .then((res) => res.json())
       .then((data) => {
-        const singleApartment = data.find((apartment) => apartment._id === id);
-        setApartment(singleApartment);
+        const singleProperty = data.find((property) => property._id === id);
+        setProperty(singleProperty);
         setLoading(false);
       });
   }, [id]);
@@ -35,28 +35,28 @@ const ApartmentDetails = () => {
     <div>
       <Container>
         <Helmet>
-          <title>{apartment?.houseName}</title>
+          <title>{property?.houseName}</title>
         </Helmet>
         <div>
-            <Headers apartment={apartment} />
+            <Headers property={property} />
         </div>
         <div>
-            <PhotoGallery apartment={apartment}/>
+            <PhotoGallery property={property}/>
         </div>
         {/* <div className="py-10">
-            <Overview apartment={apartment} />
+            <Overview property={property} />
         </div> */}
         <div className="py-10">
-            <PropertyDescription apartment={apartment} />
+            <PropertyDescription property={property} />
         </div>
         <div className="py-10">
-            <PropertyAddress address={apartment.address} />
+            <PropertyAddress address={property.address} />
         </div>
         <div className="py-10">
-            <FeaturesAmenities featuresAndAmenities={apartment.featuresAndAmenities} />
+            <FeaturesAmenities featuresAndAmenities={property.featuresAndAmenities} />
         </div>
         <div className="py-10">
-            <OwnerInfo featuresAndAmenities={apartment.featuresAndAmenities} />
+            <OwnerInfo featuresAndAmenities={property.featuresAndAmenities} />
         </div>
         <div>
           <ContactForm />
@@ -67,4 +67,4 @@ const ApartmentDetails = () => {
   );
 };
 
-export default ApartmentDetails;
+export default PropertyDetails;

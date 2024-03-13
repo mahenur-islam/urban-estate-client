@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 import { IoBedOutline } from "react-icons/io5";
-const Overview = ({apartment}) => {
-    const {bedrooms,bathrooms,garages,propertyType,builtYear,propertySizeOverall} = apartment;
+const Overview = ({property}) => {
+    const {bedrooms,bathrooms,garages,propertyType,builtYear,propertySizeOverall} = property;
     return (
        <div className="grid grid-cols-3 py-10 w-1/2 gap-10 bg-white shadow-lg rounded-md">
          <div className="flex justify-center items-center gap-3">

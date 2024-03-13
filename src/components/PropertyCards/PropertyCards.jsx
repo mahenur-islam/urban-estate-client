@@ -8,22 +8,21 @@ import { CgDetailsMore } from "react-icons/cg";
 
 
 /* eslint-disable react/prop-types */
-const ApartmentCards = ({ apartment }) => {
+const PropertyCards = ({ property }) => {
   const {
     houseName,
     images,
     propertyPrice,
     address,
-    propertyType,
     propertySizeOverall,
     bedrooms,
     category,
     availability,
-  } = apartment;
+  } = property;
   return (
     <div>
       <Link
-        to={`/apartment/${apartment?._id}`}
+        to={`/property/${property?._id}`}
         className="card col-span-1 cursor-pointer w-full md:w-64 lg:w-80 glass mx-auto group"
       >
         <figure className="relative">
@@ -76,4 +75,4 @@ const ApartmentCards = ({ apartment }) => {
   );
 };
 
-export default ApartmentCards;
+export default PropertyCards;

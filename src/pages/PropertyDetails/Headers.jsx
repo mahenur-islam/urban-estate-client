@@ -5,17 +5,17 @@ import { FaCircle } from "react-icons/fa";
 import { PiBathtub } from "react-icons/pi";
 import { LuKanbanSquareDashed } from "react-icons/lu";
 
-const Headers = ({apartment}) => {
+const Headers = ({property}) => {
     return (
         <div className="py-10 flex justify-between items-center w-full">
         <div className="space-y-3">
           <h1 className="text-sm md:text-xl lg:text-5xl font-bold">
-            {apartment?.houseName}
+            {property?.houseName}
           </h1>
           <div className="flex gap-1">
-            <p className="font-semibold">{apartment?.address?.city}, </p>
-            <p className="font-semibold">{apartment?.address?.state}, </p>
-            <p className="font-semibold">{apartment?.address?.country} </p>
+            <p className="font-semibold">{property?.address?.city}, </p>
+            <p className="font-semibold">{property?.address?.state}, </p>
+            <p className="font-semibold">{property?.address?.country} </p>
             <div className="text-gray-400">|</div>
             <p className="text-orange-900 font-semibold flex justify-center items-center gap-2"><FaCircle size={10}/>For Sell </p>
             <div className="text-gray-400">|</div>

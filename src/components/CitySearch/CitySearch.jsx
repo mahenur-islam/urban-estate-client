@@ -10,12 +10,13 @@ const CitySearch = () => {
    
   return (
     <div className="min-h-[30vh]">
-       <div className="flex flex-wrap gap-3 justify-start items-center">
+       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 justify-start items-center">
         {cities.map((item) => (
           <CitySearchBox
             key={item.label}
             label={item.label}
-            icon={item.icon}
+            // icon={item.icon}
+            image={item.image}
             selected = {city === item.label}
           />
         ))}

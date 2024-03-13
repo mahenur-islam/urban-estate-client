@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 
-const PhotoGallery = ({ apartment }) => {
-  const { images } = apartment;
+const PhotoGallery = ({ property }) => {
+  const { images } = property;
   return (
     <div className="grid grid-cols-2 gap-2">
       <div className="w-full">
